@@ -127,3 +127,6 @@ dmypy.json
 # MODIFIED SECITON
 #PyCharm project
 .idea/
+
+# Project
+staticfiles/
