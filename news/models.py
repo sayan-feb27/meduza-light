@@ -12,6 +12,7 @@ class News(UUIDModel, TimeStampedModel):
     class Meta:
         verbose_name = "Новость"
         verbose_name_plural = "Новости"
+        ordering = ("-published",)
 
     def __str__(self):
         return self.title
