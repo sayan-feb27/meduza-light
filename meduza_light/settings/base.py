@@ -128,4 +128,6 @@ MEDIA_ROOT = env("MEDIA_ROOT")
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
-CACHES = {"default": env.cache()}
+CACHES = {
+    "default": env.cache(),
+}
