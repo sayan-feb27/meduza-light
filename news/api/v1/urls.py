@@ -19,6 +19,7 @@ urlpatterns = [
             title="Meduza Light",
             description="News API",
             version="1.0.0",
+            url="/api/v1/",
             urlconf="news.api.v1.urls",
         ),
         name="openapi-schema",

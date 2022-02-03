@@ -17,8 +17,6 @@ services:
       context: .
       args:
         REQUIREMENTS_FILE: ${REQUIREMENTS_FILE}
-    ports:
-    - 8080:8080
     volumes:
     - static-content:${STATIC_ROOT}
     env_file:
