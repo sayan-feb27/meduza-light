@@ -3,6 +3,10 @@ from rest_framework import serializers
 
 
 class NewsSerializer(serializers.ModelSerializer):
+    date = serializers.CharField(source="published")
+    subject = serializers.CharField(source="title")
+    content = serializers.CharField(source="body")
+
     class Meta:
         model = News
-        fields = ["title", "body", "published", "slug"]
+        fields = ["date", "subject", "content"]
